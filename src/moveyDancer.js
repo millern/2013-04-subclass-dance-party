@@ -6,6 +6,5 @@ MoveyDancer.prototype = Object.create(Dancer.prototype);
 MoveyDancer.prototype.constructor = MoveyDancer;
 
 MoveyDancer.prototype.action = function(){
-  this.$node.toggleClass('dancer');
-  this.$node.toggleClass('bigDancer');
+  this.$node.css('top', '+=10');
 };
