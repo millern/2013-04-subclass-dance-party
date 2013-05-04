@@ -25,3 +25,8 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+.bigDancer{
+  border:30px solid red;
+  border-radius:30px;
+  position:absolute;
+}
