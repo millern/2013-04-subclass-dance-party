@@ -6,9 +6,9 @@ var Dancer = function(top, left, timeBetweenSteps){
 
 Dancer.prototype.step = function(timeBetweenSteps){
   var self = this;
-  console.log('dancer step called');
   var callStep = function(){
     self.step(timeBetweenSteps);
+    self.action();
   };
   setTimeout(callStep, timeBetweenSteps);
 };
