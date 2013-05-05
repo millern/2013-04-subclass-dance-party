@@ -10,6 +10,6 @@ BlinkyDancer.prototype.action = function(){
   if (current === "0") {
     this.$node.css('opacity', 1);
   } else {
-    this.$node.css('opacity',0);
+    this.$node.css('opacity', 0);
   }
 };
