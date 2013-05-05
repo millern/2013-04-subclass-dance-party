@@ -16,12 +16,15 @@
       <a href="#" class="addDancerButton" data-dancer-class-name="BlinkyDancer">add a blink dancer</a>
       <a href="#" class="addDancerButton" data-dancer-class-name="PulseyDancer">add a pulse dancer</a>
       <a href="#" class="addDancerButton" data-dancer-class-name="MoveyDancer">add a move dancer</a>
+      <a href='#' id='align-button'>Line up, Dancers</a>
     </div>
 
     <script>
       $(document).ready(function(){
         window.dancers = [];
-
+        $('#align-button').on("click", function(event){
+          $('.dancer').css('top', 40);
+        });
         $(".addDancerButton").on("click", function(event){
           /* This function sets up the click handlers for the create-dancer
            * buttons on index.html. You should not need to alter it.
