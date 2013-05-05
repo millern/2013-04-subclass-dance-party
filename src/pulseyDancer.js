@@ -6,6 +6,5 @@ PulseyDancer.prototype = Object.create(Dancer.prototype);
 PulseyDancer.prototype.constructor = PulseyDancer;
 
 PulseyDancer.prototype.action = function(){
-  this.$node.toggleClass('dancer');
-  this.$node.toggleClass('bigDancer');
+  this.$node.toggleClass('big');
 };
